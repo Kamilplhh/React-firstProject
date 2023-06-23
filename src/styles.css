@@ -17,6 +17,10 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: center;
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 input:focus {
@@ -49,7 +53,7 @@ input:focus {
 
 .form button:hover {
     transition: .3s ease;
-    background-color: wheat;
+    background-color: rgb(243, 207, 140);
     cursor: pointer;
 }
 
@@ -101,11 +105,16 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 10px 0 0 0;
-  }
+}
 
 li {
     padding-right: 50px;
     margin: 5px 0;
+    font-family: 'Caveat', cursive;
+}
+
+li label {
+    transition: 0.2s ease-out;
 }
 
 input[type=checkbox] {
@@ -142,8 +151,7 @@ input[type=checkbox]:checked:after {
     left: 6px;
 }
 
-label:has(input[type=checkbox]:checked){
-    transition: 0.2s ease-out;
+label:has(input[type=checkbox]:checked) {
     color: rgb(121, 93, 93);
     opacity: 0.5;
 }

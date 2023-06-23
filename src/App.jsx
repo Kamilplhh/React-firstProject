@@ -20,7 +20,7 @@ export default function App() {
             <li>
               <label>
                 <input type="checkbox" />
-                Item 1ssssssssssssssssssssssssssssssssssssss 2023/23/06
+                Take a dog for a walk wigh maggie 2023/23/06
               </label>
               <FontAwesomeIcon icon={faTrash} className='faTrash'></FontAwesomeIcon>
             </li>
