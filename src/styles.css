@@ -111,10 +111,11 @@ li {
     padding-right: 50px;
     margin: 5px 0;
     font-family: 'Caveat', cursive;
+    transition: 0.4s ease-out;
 }
 
 li label {
-    transition: 0.2s ease-out;
+    transition: 0.4s ease-out;
 }
 
 input[type=checkbox] {
@@ -151,7 +152,7 @@ input[type=checkbox]:checked:after {
     left: 6px;
 }
 
-label:has(input[type=checkbox]:checked) {
+li:has(input[type=checkbox]:checked) {
     color: rgb(121, 93, 93);
     opacity: 0.5;
 }
@@ -166,4 +167,5 @@ label:has(input[type=checkbox]:checked) {
 
 .faTrash:hover {
     color: red;
+    opacity: 1 !important;
 }
