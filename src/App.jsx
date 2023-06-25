@@ -69,9 +69,9 @@ export default function App() {
       <section>
         <h1 className='header'>Todo List</h1>
         <TodoList todos={todos} todoDone={todoDone} deleteTodo={deleteTodo} />
+        <button className="btn filter" onClick={() => weeklyTodo()}>This week</button>
+      <button className="btn filter right" onClick={() => allTodo()}>All</button>
       </section>
-      <button onClick={() => weeklyTodo()}>This week</button>
-      <button onClick={() => allTodo()}>Rest</button>
     </>
   )
 }

@@ -34,7 +34,7 @@ input:focus {
 }
 
 .form input,
-.form button {
+.btn {
     transition: .3s ease-out;
     border-radius: 10px;
     height: 40px;
@@ -45,13 +45,13 @@ input:focus {
     background-color: aquamarine;
 }
 
-.form button {
+.btn {
     text-transform: uppercase;
     background-color: rgb(80, 117, 105);
     border: aquamarine 1px solid;
 }
 
-.form button:hover {
+.btn:hover {
     transition: .3s ease;
     background-color: rgb(243, 207, 140);
     cursor: pointer;
@@ -111,7 +111,7 @@ ul {
 
 li {
     text-align: left;
-    padding-right: 50px;
+    padding-right: 15px;
     margin: 5px 0;
     font-family: 'Caveat', cursive;
     transition: 0.4s ease-out;
@@ -119,6 +119,7 @@ li {
 
 li label {
     transition: 0.4s ease-out;
+    padding-right: 50px;
 }
 
 input[type=checkbox] {
@@ -161,8 +162,9 @@ li:has(input[type=checkbox]:checked) {
 }
 
 .faTrash {
-    position: absolute;
-    right: 20px;
+    padding-left: 40px;
+    position: relative;
+    float: right;
     color: black;
     transition: .3s ease-out;
     cursor: pointer;
@@ -171,4 +173,9 @@ li:has(input[type=checkbox]:checked) {
 .faTrash:hover {
     color: red;
     opacity: 1 !important;
+}
+
+.filter {
+    width: 44% !important;
+    margin-left: 3% !important;
 }
