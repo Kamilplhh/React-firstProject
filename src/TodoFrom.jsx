@@ -20,7 +20,7 @@ export function TodoForm({ onSubmit }) {
         <form onSubmit={Submit}>
             <div className="form">
                 <label htmlFor="item">New work</label>
-                <input type="text" id="item" value={newItem} onChange={e => setNewItem(e.target.value)} required />
+                <input type="text" id="item" value={newItem} autoComplete="off" onChange={e => setNewItem(e.target.value)} required />
                 <input type="date" name="deadline" value={newDate} onChange={e => setNewDate(e.target.value)} id="date" min={today} />
                 <button>Add</button>
             </div>
