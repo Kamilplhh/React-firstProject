@@ -3,7 +3,7 @@ import { useState } from 'react';
 export function TodoForm({ onSubmit }) {
     const [newItem, setNewItem] = useState("")
     const current = new Date();
-    const today = `${current.getFullYear()}-0${current.getMonth() + 1}-${current.getDate()}`;
+    const today = `${current.getFullYear()}-${('0' + (current.getMonth() + 1)).slice(-2)}-${('0' + current.getDate()).slice(-2)}`;
     const [newDate, setNewDate] = useState(today)
 
     function Submit(e) {
